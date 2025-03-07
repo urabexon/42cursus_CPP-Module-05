@@ -3,10 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hirokiurabe <hirokiurabe@student.42.fr>    +#+  +:+       +#+        */
+/*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:29:32 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/05 18:29:33 by hirokiurabe      ###   ########.fr       */
+/*   Updated: 2025/03/07 19:11:13 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Bureaucrat.hpp"
+#include "Form.hpp"
+
+int	main() {
+	
+	return 0;
+}
