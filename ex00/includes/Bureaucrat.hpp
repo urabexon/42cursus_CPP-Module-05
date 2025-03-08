@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:26:13 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/07 18:01:42 by hurabe           ###   ########.fr       */
+/*   Updated: 2025/03/08 18:26:11 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ class Bureaucrat {
     private:
         const std::string _name; // 名前
         int _grade;              // グレード
+        Bureaucrat();			 // デフォルトコンストラクタ(課題要件のため記載)
         
 };
 
