@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:29:27 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/08 19:18:51 by hurabe           ###   ########.fr       */
+/*   Updated: 2025/03/08 20:15:22 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ class Form {
 	private:
 		const std::string _name; // 名前
 		const int _signGrade;    // 署名に必要なグレード
-		const int _executeGrade; // 実行に必要なグレード（変更不可）
+		const int _executeGrade; // 実行に必要なグレード
 		bool _isSigned;          // フォームの署名チェック
 		Form();                  // デフォルトコンストラクタ(課題要件のため記載)
 };
