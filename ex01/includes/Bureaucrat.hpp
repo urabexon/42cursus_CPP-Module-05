@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:29:23 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/07 19:13:43 by hurabe           ###   ########.fr       */
+/*   Updated: 2025/03/08 19:28:46 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ class Bureaucrat {
         int		getGrade() const;           // グレード取得のためのゲッター
         void	incrementGrade();           // グレードを増やすためのメンバ関数
         void	decrementGrade();           // グレードを減らすためのメンバ関数
-		void	signForm(Form& form) const; //
+		void	signForm(Form& form) const; // Bureaucratがフォームを署名するためのメンバ関数
 		
 
         // 例外クラス定義
@@ -50,7 +50,10 @@ class Bureaucrat {
     private:
         const std::string _name; // 名前
         int _grade;              // グレード
-        
+        Bureaucrat();			 // デフォルトコンストラクタ(課題要件のため記載)
 };
+
+// 出力演算子のオーバーロード
+std::ostream &operator<<(std::ostream &o, const Bureaucrat &bureaucrat);
 
 #endif
