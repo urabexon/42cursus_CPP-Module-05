@@ -3,10 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   PresidentialPardonForm.hpp                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hirokiurabe <hirokiurabe@student.42.fr>    +#+  +:+       +#+        */
+/*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:33:34 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/05 18:33:35 by hirokiurabe      ###   ########.fr       */
+/*   Updated: 2025/03/08 21:47:15 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef PresidentialPardonForm_HPP
+#define	PresidentialPardonForm_HPP
+
+#include "AForm.hpp"
+
+class PresidentialPardonForm: public AForm {
+	public:
+		PresidentialPardonForm(std::string target);
+		PresidentialPardonForm(const PresidentialPardonForm &copy);
+		PresidentialPardonForm &operator=(const PresidentialPardonForm &copy);
+		~PresidentialPardonForm();
+
+		void execute(Bureaucrat const &executor) const;
+
+	private:
+		const std::string _target;
+		PresidentialPardonForm();
+};
+
+std::ostream& operator<<(std::ostream &o, const PresidentialPardonForm &aform);
+
+#endif
