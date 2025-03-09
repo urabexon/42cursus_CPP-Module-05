@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:33:22 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/08 20:31:52 by hurabe           ###   ########.fr       */
+/*   Updated: 2025/03/09 19:01:32 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ class AForm {
 		bool	getSigned() const;
 		int		getGradeSign() const;
 		int		getGradeExec() const;
-		void	beSigned(const Bureaucrat& bureaucrat);
+		void	beSigned(const Bureaucrat &bureaucrat);
 		
 		// 純粋仮想関数
-		virtual void execute(Bureaucrat const & executor) const = 0;
+		virtual void execute(Bureaucrat const &executor) const = 0;
 
 		// 例外クラス定義
 		// グレードが低すぎる場合の例外処理用

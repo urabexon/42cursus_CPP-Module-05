@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:33:25 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/08 21:47:33 by hurabe           ###   ########.fr       */
+/*   Updated: 2025/03/09 19:02:09 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ class Bureaucrat {
         int		getGrade() const;           // グレード取得のためのゲッター
         void	incrementGrade();           // グレードを増やすためのメンバ関数
         void	decrementGrade();           // グレードを減らすためのメンバ関数
-		void	signForm(Form &form) const; // Bureaucratがフォームを署名するためのメンバ関数
+		void	signForm(AForm &form) const; // Bureaucratがフォームを署名するためのメンバ関数
 
 		// 
 		void	executeForm(AForm const &form) const;

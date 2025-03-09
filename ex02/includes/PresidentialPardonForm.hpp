@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:33:34 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/08 21:47:15 by hurabe           ###   ########.fr       */
+/*   Updated: 2025/03/09 18:45:11 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ class PresidentialPardonForm: public AForm {
 		PresidentialPardonForm();
 };
 
-std::ostream& operator<<(std::ostream &o, const PresidentialPardonForm &aform);
+std::ostream &operator<<(std::ostream &o, const PresidentialPardonForm &aform);
 
 #endif

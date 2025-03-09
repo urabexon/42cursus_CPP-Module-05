@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:33:38 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/08 21:49:36 by hurabe           ###   ########.fr       */
+/*   Updated: 2025/03/09 20:18:28 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ class RobotomyRequestForm: public AForm {
 		RobotomyRequestForm();
 };
 
-std::ostream& operator<<(std::ostream &o, const RobotomyRequestForm &aform);
+std::ostream &operator<<(std::ostream &o, const RobotomyRequestForm &aform);
 
 #endif

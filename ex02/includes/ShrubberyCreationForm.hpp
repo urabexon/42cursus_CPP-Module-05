@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:33:40 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/08 21:51:10 by hurabe           ###   ########.fr       */
+/*   Updated: 2025/03/09 18:26:25 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@ class ShrubberyCreationForm: public AForm {
 		ShrubberyCreationForm &operator=(const ShrubberyCreationForm &copy);
 		~ShrubberyCreationForm();
 
-		void execute(Bureaucrat const & executor) const;
+		void execute(Bureaucrat const &executor) const;
 		
 	private:
 		const std::string _target;
 		ShrubberyCreationForm();
 };
 
-std::ostream& operator<<(std::ostream &o, const ShrubberyCreationForm& aform);
+std::ostream &operator<<(std::ostream &o, const ShrubberyCreationForm &aform);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/05 18:29:43 by hirokiurabe       #+#    #+#              #
-#    Updated: 2025/03/08 19:56:39 by hurabe           ###   ########.fr        #
+#    Updated: 2025/03/09 20:35:30 by hurabe           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,8 @@ SRCS_FILES	=	main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp Robotom
 SRCS		=	$(addprefix $(SRCS_DIR), $(SRCS_FILES))
 OBJS		=	$(patsubst $(SRCS_DIR)%.cpp, $(OBJS_DIR)%.o, $(SRCS))
 
+SHRUBBERY_FILE	=	sample1_shrubbery  # アスキーアート出力ファイルの変数
+
 all: $(NAME)
 
 $(NAME): $(OBJS)
@@ -35,7 +37,7 @@ clean:
 	$(RM) $(OBJS_DIR)
 
 fclean:
-	$(RM) $(OBJS_DIR) $(NAME)
+	$(RM) $(OBJS_DIR) $(NAME) $(SHRUBBERY_FILE)
 
 re: fclean all
 
