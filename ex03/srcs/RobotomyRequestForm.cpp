@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:48:48 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/09 21:52:26 by hurabe           ###   ########.fr       */
+/*   Updated: 2025/03/11 20:29:12 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,12 @@ void RobotomyRequestForm::execute(Bureaucrat const &executor) const {
 		throw (Bureaucrat::GradeTooLowException());
 	else if (this->getSigned() == false)
 		throw (AForm::FormNotSignedException());
+	std::cout << "grrrrr....rrrrrrrrrr..!!!!" << std::endl;
 	srand(time(NULL));
 	if (rand() % 2)
 		std::cout << _target << " has been robotimized successfully" << std::endl;
 	else
-		std::cout << "grrrrr....rrrrrrrrrr..!!!!" << std::endl;
+		std::cout << "robotomized failed!" << std::endl;
 }
 
 std::ostream &operator<<(std::ostream &o, const RobotomyRequestForm &aform) {

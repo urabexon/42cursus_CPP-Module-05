@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:48:31 by hirokiurabe       #+#    #+#             */
-/*   Updated: 2025/03/09 22:12:36 by hurabe           ###   ########.fr       */
+/*   Updated: 2025/03/11 21:01:47 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,6 @@
 
 class AForm;
 
-#define FORM_SHRUBBERY 0
-#define FORM_ROBOTOMY 1
-#define FORM_PRESIDENTIAL 2
-
 class Intern {
 	public:
 		Intern();
@@ -29,12 +25,18 @@ class Intern {
 		Intern &operator=(const Intern &copy);
 		~Intern();
 
-		int getFormType(const std::string &name) const;
     	AForm *makeForm(const std::string &name, const std::string &target);
 
 		class FormNotExistException: public std::exception {
 			const char *what() const throw();
 		};
+	
+	private:
+		struct FormType {
+			const char*	formName;
+			AForm* (*createForm)(const std::string&);
+		};
+		static FormType _FormType[];
 };
 
 #endif
